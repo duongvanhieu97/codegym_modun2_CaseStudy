@@ -2,14 +2,15 @@ package models.user;
 
 import java.io.Serializable;
 
-public class Account implements Serializable {
+public class Login implements Serializable {
     private String user;
     private String password;
 
-    public Account() {
+
+    public Login() {
     }
 
-    public Account(String user, String password) {
+    public Login(String user, String password) {
         this.user = user;
         this.password = password;
     }
