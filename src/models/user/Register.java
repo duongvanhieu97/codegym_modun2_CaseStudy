@@ -6,16 +6,18 @@ public class Register {
     private String email;
     private String phone;
     private String address;
+    private String password;
 
     public Register() {
     }
 
-    public Register(int id, String name, String email, String phone, String address) {
+    public Register(int id, String name, String email, String phone, String address, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.address = address;
+        this.password = password;
     }
 
     public int getId() {
@@ -58,6 +60,14 @@ public class Register {
         this.address = address;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "Register{" +
@@ -66,6 +76,7 @@ public class Register {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

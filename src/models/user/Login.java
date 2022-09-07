@@ -1,13 +1,20 @@
 package models.user;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Login implements Serializable {
     private String user;
     private String password;
+    private final ArrayList<Login> logins = new ArrayList<>();
 
 
     public Login() {
+        logins.add(new Login("admin","1"));
+        logins.add(new Login("hieu","1"));
+        logins.add(new Login("vinh","1"));
+        logins.add(new Login("tuan","1"));
+
     }
 
     public Login(String user, String password) {
